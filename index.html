@@ -1,0 +1,44 @@
+<div class="login-page">
+  <aside class="login-page__info">
+    <div class="logo">
+      <img src="logo.svg" alt="Логотип сервиса" class="logo__img">
+      <span class="logo__text">Сервис</span>
+    </div>
+    <div class="welcome-block">
+      <h1 class="welcome-block__title">С возвращением!</h1>
+      <p class="welcome-block__desc">Войдите в свой аккаунт, чтобы продолжить работу с платформой и получить доступ ко всем функциям.</p>
+    </div>
+  </aside>
+
+  <main class="login-page__main">
+    <div class="login-card">
+      <h2 class="login-card__title">Вход в аккаунт</h2>
+      
+      <form class="login-form" action="https://postman-echo.com/post" method="POST">
+        <label class="login-form__field">
+          Электронная почта
+          <input type="email" name="email" required class="login-form__input" placeholder="name@example.com">
+        </label>
+
+        <label class="login-form__field">
+          Пароль
+          <input type="password" name="password" required class="login-form__input" placeholder="Введите пароль">
+        </label>
+
+        <div class="login-form__row">
+          <label class="login-form__checkbox-label">
+            <input type="checkbox" name="remember" class="login-form__checkbox">
+            Запомнить меня
+          </label>
+          <a href="#" class="login-form__forgot">Восстановить пароль</a>
+        </div>
+
+        <button type="submit" class="login-form__button">Войти</button>
+      </form>
+
+      <p class="login-card__register">
+        Нет аккаунта? <a href="#" class="login-card__register-link">Зарегистрироваться</a>
+      </p>
+    </div>
+  </main>
+</div>
